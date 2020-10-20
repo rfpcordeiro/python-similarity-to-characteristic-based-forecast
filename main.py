@@ -533,3 +533,11 @@ def execute_grouped(input_file_name, output_file_name, plnt_col_nm, grp_col_nm, 
             else:
                 # if there is no product to compare we just jump this group code
                 pass
+              
+if __name__ == "__main__":
+    execute_grouped(
+      input_file_name = "new_products.xlsx",
+      output_file_name = 'Product_Location_Update.csv', 
+      plnt_col_nm = 'PLNT_CD', 
+      grp_col_nm = 'MTRL_PROD_HIERCY_4',
+      update_base_ind=True)
